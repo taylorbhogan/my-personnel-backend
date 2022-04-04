@@ -1,0 +1,16 @@
+const { port, mongoURI } = require('../config');
+const mongoose = require('mongoose')
+
+const app = require('../app');
+
+const connectToMongoose = async () => {
+  await mongoose.connect(mongoURI, {useNewUrlParser:true})
+
+}
+connectToMongoose()
+  .then(() => {
+    console.log("Connected to MongoDB successfully")
+  })
+  .catch(err => console.log("error:",err))
+
+app.listen(port, () => console.log(`Now listening on port ${port}`))
