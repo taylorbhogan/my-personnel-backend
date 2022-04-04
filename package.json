@@ -20,10 +20,10 @@
     "express-bearer-token": "^2.4.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.3",
-    "per-env": "^1.0.2"
+    "per-env": "^1.0.2",
+    "@faker-js/faker": "^6.0.0-alpha.7"
   },
   "devDependencies": {
-    "@faker-js/faker": "^6.0.0-alpha.7",
     "nodemon": "^2.0.15"
   }
 }
