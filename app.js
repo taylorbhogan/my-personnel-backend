@@ -13,9 +13,9 @@ app.use(express.json());
 
 // app.use(requireAuth)
 
-if (!isProduction) {
+// if (!isProduction) {
   app.use(cors());
-}
+// }
 
 app.use(routes)
 
